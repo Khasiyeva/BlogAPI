@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlogApp.Business.DTOs.BrandDtos
 {
-    internal class GetBrandDto
+    public class DetailBrandDto
     {
     }
 }

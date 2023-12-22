@@ -1,4 +1,5 @@
-﻿using BlogApp.Business.Services.Interfaces;
+﻿using BlogApp.Business.DTOs.BrandDtos;
+using BlogApp.Business.Services.Interfaces;
 using BlogApp.DAL.Repositories.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -21,5 +22,12 @@ namespace BlogApp.API.Controllers
             var brands =await _service.GetAllAsync();
             return Ok(brands);
         }
+        [HttpPost]
+        public async Task<IActionResult> Create([FromForm] CreateBrandDto brand)
+        {
+            await _service.Create(brand);
+            return StatusCode(StatusCodes.Status201Created);
+        }
+
     }
 }

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5w7+ya8BznlzMOcMFMiUpq30gfRWCgTYiWfseA/6OePQHiFTlPct/6d8eIOl+ZXQ/Li/lEgbxvir80+THVK8OA==",
+  "dgSpecHash": "oiIz5qYsJQIGPqHipl90Y7BcZ7Ob5x01py5MthpCjTBfeET3vjpX4bGQInZha1lFmrjw9cT3lyUeMP5oeOrOBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\II novbe\\source\\repos\\BlogApp\\BlogApp.Core\\BlogApp.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\II novbe\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\II novbe\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\II novbe\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "C:\\Users\\II novbe\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

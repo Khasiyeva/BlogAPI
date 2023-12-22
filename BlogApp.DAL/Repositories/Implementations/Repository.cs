@@ -15,14 +15,25 @@ namespace BlogApp.DAL.Repositories.Implementations
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity, new()
     {
         private readonly AppDbContext _context;
+        private DbSet<TEntity> _table;
 
         public Repository(AppDbContext context)
         {
             _context = context;
+            _table = _context.Set<TEntity>();
         }
+
         public DbSet<TEntity> Table => _context.Set<TEntity>();
 
+        public async Task Create(TEntity entity)
+        {
+            await _table.AddAsync(entity);
+        }
 
+        public void Delete(TEntity entity)
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task<IQueryable<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? expression = null,
             Expression<Func<TEntity, object>>? orderByExpression = null,
@@ -50,6 +61,21 @@ namespace BlogApp.DAL.Repositories.Implementations
                 }
             }
             return query;
+        }
+
+        public Task<TEntity> GetByIdAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SaveChangesAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(TEntity entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }
